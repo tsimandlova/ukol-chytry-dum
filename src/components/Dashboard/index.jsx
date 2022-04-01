@@ -10,9 +10,10 @@ const Dashboard = (data) => {
     return (
       <main className="dashboard">
           <Lights lights={data.lights}/>
+          {/* <Lights /> */}
           <Climate />
-          <Blinds />
-          <Energy />
+          <Blinds state="open" />
+          <Energy electricity="21.4" water="15.6"/>
         </main>
   );
 };
