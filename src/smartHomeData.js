@@ -23,7 +23,7 @@ export const smartHomeData = {
 	},
 	blinds: 'open',
 	energyConsumption: {
-		electricity: 36.7,
+		electricity: 36.9,
 		water: 14.1,
 	}
 };
