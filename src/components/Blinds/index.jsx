@@ -27,8 +27,16 @@ const Blinds = ({state}) => {
 					Žaluzie
 				</div>
 				<div className="blinds__controls">
-        {stavZaluzii === 'open' ? <button className="button button--active" onClick={handleClick1}>Otevřeno</button> : <button className="button" onClick={handleClick1}>Otevřeno</button>}
-				{stavZaluzii === 'closed' ? <button className="button button--active" onClick={handleClick2}>Zavřeno</button> : <button className="button" onClick={handleClick2}>Zavřeno</button>}
+          {
+            stavZaluzii === 'open' 
+            ? <button className="button button--active" onClick={() => setStavZaluzii("open")}>Otevřeno</button> 
+            : <button className="button" onClick={() => setStavZaluzii("open")}>Otevřeno</button>
+          }
+          {
+            stavZaluzii === 'closed' 
+            ? <button className="button button--active" onClick={() => setStavZaluzii("closed")}>Zavřeno</button> 
+            : <button className="button" onClick={() => setStavZaluzii("closed")}>Zavřeno</button>
+          }
 				</div>
 			</div>
   );

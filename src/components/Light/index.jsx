@@ -8,10 +8,7 @@ const Light = ({name, state}) => {
   const [stav, setStav] = useState(state);
 
   const handleClick = () => {
-    let novyStav 
-    
-    {stav === 'on' ? novyStav = 'off' : novyStav = 'on'}
-
+    let novyStav = stav === 'on' ? 'off' : 'on'
     setStav(novyStav)
   }
 
